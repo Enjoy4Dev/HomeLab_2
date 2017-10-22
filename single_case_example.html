@@ -1,0 +1,627 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+<!--          <link rel="stylesheet" href="css/swiper.min.css">-->
+          <title>HomeLab</title>
+          <!-- Подключения таблицы стилей Bootstrap 3 -->
+          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+          <!-- Подключение темы со стилями Bootstrap 3 -->
+          <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+          <!-- Подключение таблицы стилей иконок Awesome -->
+          <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+          <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+          <script src="js/jquery-1.11.1.min.js"></script>
+          <!-- Подключение скриптов Bootstrap 3 -->
+          <script src="js/bootstrap.min.js"></script>
+          <style id="holderjs-style" type="text/css"></style>      
+        
+          <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+    </head>
+    
+
+
+    <body>             
+        <main>
+            
+            <div id="left_side">
+                <div id="site_round"></div>
+                <div id="logo_info_menu_container">
+
+                    <div class="logo_info_content">
+                        <div class="logo_container">
+                            <a class="logo_url" href="index.html">
+                            <img src="images/logo.png" alt="logo_homelab">
+                            </a>
+                        </div>
+                        <div class="info_container">
+                            <div class="contact_info">
+                                <img src="images/e-mail_logo.png">
+                                <a href="mailto:office@homelab.md">office@homelab.md</a>
+                            </div>
+                            <div class="contact_info">
+                                <img src="images/phone_logo.png">
+                                <a href="tel:+373-79-99-66-99">+(373)79 99 66 99</a>
+                            </div>
+                            <a data-target=".swiper-container" data-slide-to="6" style="cursor: pointer;">
+                                <div class="button_block" style="cursor: pointer;" id="menu_button" onClick="myFunction()">
+                                    <p class="button_link">Оформить заявку</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="main_nav_menu_block">
+                        <nav class="main_nav_menu">
+                            <ul class="main_nav_menu_ul">
+                                <li class="main_nav_menu_li">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="cases.html">Кейсы</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="cases.html">Блог</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a data-target="#myVerticalCarousel" data-slide-to="6">Контакты</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+                <nav class="category_prime_menu">
+                    <ul class="category_prime_menu_ul">
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_border_top"></div>
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="#">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/intereor_logo.png">
+                                    </div>
+                                    <p>Интерьеры</p>
+                                    <p class="full_height_space"></p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="#">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/exterior_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Экстерьеры</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="#">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/comercion_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Коммерция</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="#">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/furniture_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Мебель</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="single_case_example.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/repair_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Ремонт</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                    </ul>
+
+                </nav>
+                
+
+
+                <div class="welcome_text">
+                    <div class="welcome_text_bg"></div>
+                    <h3 class="page_title">Fairy Tail</h3>
+
+
+                    <div class="preloader">
+                         <div class="loader">
+                            <span class="dot dot_1"></span>
+                            <span class="dot dot_2"></span>
+                            <span class="dot dot_3"></span>
+                            <span class="dot dot_4"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="copy">
+                    <div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_in.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_youtube.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_twiter.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_fb.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_youtube.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_twiter.png"></a>
+                        </div>
+                    </div>
+                    <div class="footer_text">
+                    Powored by <a href="http://wis.md/">We IT Support</a> | All Rights Reserved  
+                    </div>
+
+                </div>
+
+            </div>
+    
+
+            
+            <div class="case_right_side" id="img-container">
+
+                 <header style="background: url(images/14-MIN.jpg) center no-repeat; background-size: cover; height: 50%;">
+                     <div class="content" style="transform: translateY(0px); opacity: 1.4;">
+                         <hgroup>
+                             <h1>Fairy tail</h1>
+                             <i>Квартира в москве</i> 
+                         </hgroup>
+                     </div>
+                     <div class="overlay"></div>
+                </header>
+                <section class="site">
+                    <div class="case_container">
+                     <div class="row">
+                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 case_text_top">
+                             
+                             <div class="case_text_top_title">
+                                 <p>ХАРАКТЕРИСТИКИ:</p>
+                             </div>
+                         
+                             <div class="cases_params_single">
+                                 <p>Место: </p>
+                                 <p class="cases_params_single_second">Москва</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Метраж: </p>
+                                 <p class="cases_params_single_second">76.64 кв.м.</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Количество комнат: </p>
+                                 <p class="cases_params_single_second">2</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Высота потолков: </p>
+                                 <p class="cases_params_single_second">2.85 м.</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Стиль: </p>
+                                 <p class="cases_params_single_second">среднеземноморский</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Стадия: </p>
+                                 <p class="cases_params_single_second">Проект</p>
+                             </div>
+                         </div>                     
+                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 case_text_top">
+                             
+                             <div class="case_text_top_title">
+                                 <p>БРЕНДЫ, ПРЕДСТАВЛЕННЫЕ В ПРОЕКТЕ:</p>
+                             </div>
+                             
+                             <div class="cases_params_single">
+                                 <p>Ламинат: </p>
+                                 <p class="cases_params_single_second">Kronopol Senso от</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p class="cases_params_single_second">Conmetalcom, Constructresurs</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Плитка: </p>
+                                 <p class="cases_params_single_second">Urbico от Abc.md</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Обои: </p>
+                                 <p class="cases_params_single_second">Rash от Rafi-Décor </p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Свет: </p>
+                                 <p class="cases_params_single_second">Henge</p>
+                             </div>
+                             <div class="cases_params_single">
+                                 <p>Технический свет: </p>
+                                 <p class="cases_params_single_second">Ledmarket</p>
+                             </div>
+
+                         </div>                     
+                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 case_text_top">
+                             
+                             <div class="case_text_top_title">
+                                 <p>ПЛАНИРОВАЧНОЕ РЕШЕНИЕ:</p>
+                             </div>
+                         
+                             <div class="cases_params_single">
+                                 <p>Посмотреть подробный<br>план проекта.</p>
+                             </div>
+                             
+                             <a id="case_button" target="_blank" href="images/14-MIN.jpg"><button class="cases_button"><img src="images/how_download-button.png">Открыть PDF</button></a>
+                         </div>
+                     </div>
+                     
+                     <div class="row full_width_row">
+                         <p>Квартиру, площадью 75 квадратных метров, дизайнерам студии «HomeLab» требовалось функционально разделить на части – зона гостиной и кухни, детская комната для двух детей и спальня хозяев. Дизайнеры предусмотрели объединенную зону кухни-гостиной, изолированную комнату детей и учебный кабинет, который переоборудовали из балкона. В процессе перепланировки было заложено одно окно и большое пространство превратилось в 2 независимые функциональные зоны. 
+                        От детской кухню-гостиную отделяет ажурная конструкция– эффектное решение, которое также позволяет сделать прихожую и гостиную более воздушной, придав восточный колорит.
+                         </p>
+                     </div>
+                     <div class="row ">
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_2_1">
+                             <img src="images/14-MIN.jpg">
+                         </div>
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_2_2">
+                             <img src="images/14-MIN.jpg">
+                         </div>
+                     </div>
+
+                            
+                            
+                                          
+                     <div class="row full_width_row">
+                         <p> «Мы любим книги» – рассказывает хозяйка квартиры Мария Ротарь. «Много читаем и хоть места для книг в квартире не было предусмотрено, для нас было важно, как дизайнеры решат этот вопрос. Также, нам очень важно, чтобы было много систем хранения». 
+                         </p><p style="margin-top: 15px;">
+«Нам очень понравилось решение для прихожей, узкий нефункциональный коридор превратился в настоящий арт-обьект, который был расширен визуально наличием зеркал напротив книжных полок».
+
+                         </p>
+                     </div>
+                                          
+                        <div class="row">
+                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 case_image_block" id="cimg_3_1">
+                             <img src="images/14-MIN.jpg">
+                         </div>                     
+                        </div>                 
+                        
+                        <div class="row full_width_row">
+                         <p> Москвичи – люди, ценящие комфорт и свое время, жители северной столицы тем не менее очень любят тепло, поэтому было принято решение оформить квартиру в теплых песочных оттенках с добавлением бирюзы. 
+                         </p>
+                                    
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 case_image_block" id="cimg_4_1">
+                                 <img src="images/14-MIN.jpg">
+                             </div>    
+                        </div>                        
+                        <div class="row full_width_row">
+                         <p> Изюминкой интерьера и связующим элементом стала керамическая плитка от Imola из коллекции Kiko. Это было своеобразным открытием – использовать плитку в интерьере в качестве декора! Придает пространству вес и устойчивость и вместе с нем теплоту. Так как декор плитки оформлен в виде принта на ткани.
+                         </p>
+                                    
+                        </div>
+                        <div class="row">
+                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 case_image_block" id="cimg_5_1">
+                                 <img src="images/14-MIN.jpg">
+                             </div> 
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_5_2">
+                                 <img src="images/14-MIN.jpg">
+                             </div>    
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_5_3">
+                                 <img src="images/14-MIN.jpg">
+                             </div>    
+                        </div>
+                        <div class="row full_width_row">
+                         <p> Отдельного внимания заслуживают санузлы.
+Для главного санузла подобрали плитку из тика, состаренного на дне океана. Ей оформили зону ванной и зону умывальника таким
+же декором в других размерах. При этом плитка отражается в зеркале. Другие стены на контрасте оформили серой спокойной плиткой. Мебель под раковину выполнена на заказ и является уникальной авторской разработкой дизайнера Качан Ольги. 
+
+                         </p>
+                                    
+                        </div>
+                        <div class="row case_square">
+
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_6_1">
+                                 <img src="images/14-MIN.jpg">
+                             </div>    
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_6_2">
+                                 <img src="images/14-MIN.jpg">
+                             </div>  
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_6_3">
+                                 <img src="images/14-MIN.jpg">
+                             </div>    
+                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 case_image_block" id="cimg_6_4">
+                                 <img src="images/14-MIN.jpg">
+                             </div>    
+                        </div>
+                        <div class="row full_width_row">
+                         <p> Декоративное освещение в проекте представлено брендом Henge и символизирует единение семьи, кольцевая форма как идея присутствует и в других элементах интерьера. 
+                         </p>
+                        </div>
+                        
+                        <div class="row">
+
+                             <div class="col-xs-12 col-sm-8 col-md-7 col-lg-7 case_image_block" id="cimg_7_1">
+                                 <img src="images/14-MIN.jpg">
+                             </div>    
+                             <div class="col-xs-12 col-sm-5 col-md-4 col-lg-5 case_image_block" id="cimg_7_2">
+                                 <img src="images/14-MIN.jpg">
+                             </div>  
+ 
+                        </div>
+                        
+                                                    </div>
+
+                    <div class="separator" style="margin-top: 10px;">       
+                                <div class="separator_bg" style="background-image: url(images/separator.png);">
+                                    <h3 class="separator_text separator_text_white" style="font-size: 29px;">Все</h3>
+                                </div>
+                                <h3 class="separator_text separator_text_black" style="font-size: 29px;">Фотографии проекта</h3>
+                            </div>
+
+
+                        
+                        
+                                            
+                    <div class="case_carousel">
+                    <div class="row" style="height: 100%;position: relative;">
+                          <div id="carousel_reviews">
+  
+                              <div class="hideLeft">
+                                  <img src="https://s16.postimg.org/vklrwoxtx/cover9.jpg">
+                              </div>
+
+                              <div class="prevLeftSecond">
+                                  <img src="https://s16.postimg.org/cgsggckzp/cover8.jpg">
+                              </div>
+
+                              <div class="prev">
+                                  <img src="https://s16.postimg.org/emmrauog5/cover7.jpg">
+                              </div>
+
+                              <div class="selected">
+                                  <img src="https://s16.postimg.org/9drqcz611/cover1.jpg">
+                              </div>
+
+                              <div class="next">
+                                  <img src="https://s16.postimg.org/pnhwfvgp1/cover6.jpg">
+                              </div>
+
+                              <div class="nextRightSecond">
+                                  <img src="https://s16.postimg.org/edp6kxbnp/cover4.jpg">
+                              </div>
+
+                              <div class="hideRight">
+                                  <img src="https://s16.postimg.org/fij8qay4l/cover3.jpg">
+                              </div>
+                          </div>
+                        
+    
+                        <div class="reviews_buttons">
+                          <button id="prev">&#60;</button>
+                            <div><p>|&nbsp;|</p></div>
+                          <button id="next">&#62;</button>
+                        </div>
+                    </div>                
+                </div>
+                </section>
+
+
+
+
+            </div>
+            <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+        </main>
+
+    </body>
+    
+            
+<script>
+//Based on the Scroller function from @sallar
+var $content = $('header .content')
+  , $blur    = $('header .overlay')
+  , wHeight  = $(window).height();
+
+$(window).on('resize', function(){
+  wHeight = $(window).height();
+});
+
+window.requestAnimFrame = (function()
+{
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function( callback ){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
+
+function Scroller()
+{
+  this.latestKnownScrollY = 0;
+  this.ticking            = false;
+}
+
+Scroller.prototype = {
+ 
+  init: function() {
+    window.addEventListener('scroll', this.onScroll.bind(this), false);
+    $blur.css('background-image',$('header:first-of-type').css('background-image'));
+  },
+
+
+  onScroll: function() {
+    this.latestKnownScrollY = window.scrollY;
+    this.requestTick();
+  },
+
+  
+  requestTick: function() {
+    if( !this.ticking ) {
+      window.requestAnimFrame(this.update.bind(this));
+    }
+    this.ticking = true;
+  },
+
+  update: function() {
+    var currentScrollY = this.latestKnownScrollY;
+    this.ticking       = false;
+    
+    
+    var slowScroll = currentScrollY / 2
+      , blurScroll = currentScrollY * 2
+      , opaScroll = 1.4 - currentScrollY / 400;
+//   if(currentScrollY > wHeight)
+//     $('nav').css('position','fixed');
+//   else
+//     $('nav').css('position','absolute');
+//    
+    $content.css({
+      'transform'         : 'translateY(' + slowScroll + 'px)',
+      '-moz-transform'    : 'translateY(' + slowScroll + 'px)',
+      '-webkit-transform' : 'translateY(' + slowScroll + 'px)',
+      'opacity' : opaScroll
+    });
+    
+    $blur.css({
+      'opacity' : blurScroll / wHeight
+    });
+  }
+};
+
+
+var scroller = new Scroller();  
+scroller.init();
+</script>
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            var $preloader = $('.preloader'),
+                $spinner   = $preloader.find('loader');
+            $spinner.fadeOut();
+            $preloader.delay(50).fadeOut('slow');
+        });
+    </script>
+    
+    
+    <script type="text/javascript">
+    
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("img-container").getElementsByTagName("img");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+for (var i = 0; i < img.length-1; i++){
+  img[i].onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+modal.onclick = function() { 
+    modal.style.display = "none";
+}
+    
+    </script>
+</html>
+
+<!--
+                      <div class="row carousel_container">
+                          <div id="carousel">
+                              <div class="hideLeft">
+                                  <img src="https://s16.postimg.org/vklrwoxtx/cover9.jpg">
+                              </div>
+
+                              <div class="prevLeftSecond">
+                                  <img src="https://s16.postimg.org/cgsggckzp/cover8.jpg">
+                              </div>
+
+                              <div class="prev">
+                                  <img src="https://s16.postimg.org/emmrauog5/cover7.jpg">
+                              </div>
+
+                              <div class="selected">
+                                  <img src="https://s16.postimg.org/9drqcz611/cover1.jpg">
+                              </div>
+
+                              <div class="next">
+                                  <img src="https://s16.postimg.org/pnhwfvgp1/cover6.jpg">
+                              </div>
+
+                              <div class="nextRightSecond">
+                                  <img src="https://s16.postimg.org/edp6kxbnp/cover4.jpg">
+                              </div>
+
+                              <div class="hideRight">
+                                  <img src="https://s16.postimg.org/fij8qay4l/cover3.jpg">
+                              </div>
+                          </div>
+                      </div>
+-->

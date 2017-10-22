@@ -1,0 +1,370 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+          <title>HomeLab</title>
+          <!-- Подключения таблицы стилей Bootstrap 3 -->
+          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+          <!-- Подключение темы со стилями Bootstrap 3 -->
+          <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+          <!-- Подключение таблицы стилей иконок Awesome -->
+          <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+          <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+          <script src="js/jquery-1.11.1.min.js"></script>
+          <!-- Подключение скриптов Bootstrap 3 -->
+          <script src="js/bootstrap.min.js"></script>
+<!--          <style id="holderjs-style" type="text/css"></style>      -->
+        
+          <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--          <link rel="stylesheet" type="text/css" href="owl.carousel.css">-->
+<!--          <link rel="stylesheet" type="text/css" href="docs.theme.min.css">-->
+        
+        
+
+
+
+    </head>
+    
+
+
+    <body>             
+        <main>
+                                                <!-- ----------Header---------- -->
+            
+ <div id="left_side">
+                <div id="site_round"></div>
+                <div id="logo_info_menu_container">
+
+                    <div class="logo_info_content">
+                        <div class="logo_container">
+                            <a class="logo_url" href="index.html">
+                            <img src="images/logo.png" alt="logo_homelab">
+                            </a>
+                        </div>
+                        <div class="info_container">
+                            <div class="contact_info">
+                                <img src="images/e-mail_logo.png">
+                                <a href="mailto:office@homelab.md">office@homelab.md</a>
+                            </div>
+                            <div class="contact_info">
+                                <img src="images/phone_logo.png">
+                                <a href="tel:+373-79-99-66-99">+(373)79 99 66 99</a>
+                            </div>
+                            <a data-target=".swiper-container" data-slide-to="6" style="cursor: pointer;">
+                                <div id="contactButton" class="button_block" style="cursor: pointer;" id="menu_button" onClick="myFunction()">
+                                    <p class="button_link">Оформить заявку</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="main_nav_menu_block">
+                        <nav class="main_nav_menu">
+                            <ul class="main_nav_menu_ul">
+                                <li class="main_nav_menu_li">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="cases.html">Кейсы</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="cases.html">Блог</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a data-target="#myVerticalCarousel" data-slide-to="6">Контакты</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+                <nav class="category_prime_menu">
+                    <ul class="category_prime_menu_ul">
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_border_top"></div>
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/intereor_logo.png">
+                                    </div>
+                                    <p>Интерьеры</p>
+                                    <p class="full_height_space"></p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/exterior_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Экстерьеры</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/comercion_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Коммерция</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/furniture_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Мебель</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="single_case_example.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/repair_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Ремонт</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                    </ul>
+
+                </nav>
+                
+
+
+                <div class="welcome_text">
+                    <div class="welcome_text_bg"></div>
+                    <h3 class="page_title">Интерьеры</h3>
+
+
+                    <div class="preloader">
+                         <div class="loader">
+                            <span class="dot dot_1"></span>
+                            <span class="dot dot_2"></span>
+                            <span class="dot dot_3"></span>
+                            <span class="dot dot_4"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="copy">
+                    <div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_in.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_youtube.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_twiter.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_fb.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_youtube.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_twiter.png"></a>
+                        </div>
+                    </div>
+                    <div class="footer_text">
+                    Powored by <a href="http://wis.md/">We IT Support</a> | All Rights Reserved  
+                    </div>
+
+                </div>
+
+            </div>
+    
+    
+                                                <!-- ----------BODY---------- -->
+              
+             <div id="right_side">
+
+                 <div class="category_image">
+                     <a href="portfolio.html">
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 category_image_block">
+                             <img src="images/category_living_room.png">
+                             <div class="category_separator_container">
+                                 <div class="category_separator_green">
+                                     <div class="category_separator_white">
+                                 <p class="category_separator_text">Гостинные</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </a>    
+                     <a href="portfolio.html">
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 category_image_block">
+                             <img src="images/category_citchen.png">
+                             <div class="category_separator_container">
+                                 <div class="category_separator_green">
+                                     <div class="category_separator_white">
+                                 <p class="category_separator_text">Кухни</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </a>    
+                     <a href="portfolio.html">
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 category_image_block">
+                             <img src="images/category_bedroom.png">
+                             <div class="category_separator_container">
+                                 <div class="category_separator_green">
+                                     <div class="category_separator_white">
+                                 <p class="category_separator_text">Спальни</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </a>
+                     <a href="portfolio.html">
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 category_image_block">
+                             <img src="images/category_childrens_room.png">
+                             <div class="category_separator_container">
+                                 <div class="category_separator_green">
+                                     <div class="category_separator_white">
+                                 <p class="category_separator_text">Детские</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </a>    
+                     <a href="portfolio.html">
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 category_image_block">
+                             <img src="images/category_5.png">
+                             <div class="category_separator_container">
+                                 <div class="category_separator_green">
+                                     <div class="category_separator_white">
+                                 <p class="category_separator_text">Гостинные</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </a>    
+                     <a href="portfolio.html">
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 category_image_block">
+                             <img src="images/category_6.png">
+                             <div class="category_separator_container">
+                                 <div class="category_separator_green">
+                                     <div class="category_separator_white">
+                                 <p class="category_separator_text">Гостинные</p>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </a>    
+
+                 </div>
+              </div>
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <iframe class="modal-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.3908272380177!2d28.85360317112876!3d47.01293302016408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8a009d6ea418e372!2z0J_Qu9Cw0L3QtdGC0LAg0LHQsNCx0L7Rh9C10Lo!5e0!3m2!1sru!2s!4v1507313708755" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            
+                        
+            <div id="contactModal" class="modal">
+                <span id="close" class="close">&times;</span>
+                <div id="contactModalBlock">
+                    <form action="extens/application.php" class="form-horizontal" method="post" role="form">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact_title">
+                                <h2>Контактная форма:</h2>
+                                <img src="images/contact_form_separator.png">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Имя*" required>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail*" required>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Телефон*" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group ">
+                                <textarea id="message" name="message" class="form-control mesage_area" placeholder="Коментарий" rows="1"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="form-group btn_send_block" >
+                                <button type="submit" class="btn_send"> 
+                                    <img src="images/contact_form_send_btn_icon.png" style="width: 20px; margin-top: 1px;">Отправить
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+                
+        <script src="js/contact_modal.js"></script>
+       
+        <script type="text/javascript">
+$(window).on('load', function () {
+    var $preloader = $('.preloader'),
+        $spinner   = $preloader.find('loader');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+        </script>
+        
+        
+        
+    </body>
+</html>

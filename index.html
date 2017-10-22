@@ -1,0 +1,1451 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+<!--          <link rel="stylesheet" href="css/swiper.min.css">-->
+          <title>HomeLab</title>
+          <!-- Подключения таблицы стилей Bootstrap 3 -->
+          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+          <!-- Подключение темы со стилями Bootstrap 3 -->
+          <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+          <!-- Подключение таблицы стилей иконок Awesome -->
+          <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+          <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+          <script src="js/jquery-1.11.1.min.js"></script>
+          <!-- Подключение скриптов Bootstrap 3 -->
+          <script src="js/bootstrap.min.js"></script>
+          <style id="holderjs-style" type="text/css"></style>      
+        
+          <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+          <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        
+        
+
+
+
+    </head>
+    
+
+
+    <body>             
+        <main>
+                                                <!-- ----------Header---------- -->
+            
+            <div id="left_side">
+                <div id="site_round"></div>
+                <div id="logo_info_menu_container">
+
+                    <div class="logo_info_content">
+                        <div class="logo_container">
+                            <a class="logo_url" href="index.html">
+                            <img src="images/logo.png" alt="logo_homelab">
+                            </a>
+                        </div>
+                        <div class="info_container">
+                            <div class="contact_info">
+                                <img src="images/e-mail_logo.png">
+                                <a href="mailto:office@homelab.md">office@homelab.md</a>
+                            </div>
+                            <div class="contact_info">
+                                <img src="images/phone_logo.png">
+                                <a href="tel:+373-79-99-66-99">+(373)79 99 66 99</a>
+                            </div>
+                            <a data-target=".swiper-container" data-slide-to="6" style="cursor: pointer;">
+                                <div id="contactButton" class="button_block" style="cursor: pointer;" id="menu_button" onClick="myFunction()">
+                                    <p class="button_link">Оформить заявку</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="main_nav_menu_block">
+                        <nav class="main_nav_menu">
+                            <ul class="main_nav_menu_ul">
+                                <li class="main_nav_menu_li">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="cases.html">Кейсы</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a href="cases.html">Блог</a>
+                                </li>
+                                <li class="main_nav_menu_li">
+                                    <a data-target="#myVerticalCarousel" data-slide-to="6">Контакты</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+                <nav class="category_prime_menu">
+                    <ul class="category_prime_menu_ul">
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_border_top"></div>
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/intereor_logo.png">
+                                    </div>
+                                    <p>Интерьеры</p>
+                                    <p class="full_height_space"></p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/exterior_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Экстерьеры</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/comercion_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Коммерция</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="interiors.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/furniture_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Мебель</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                        <li class="category_prime_menu_li">
+                            <div class="category_prime_menu_hover_bg"></div>
+                            <a href="single_case_example.html">
+                                <div class="category_prime_menu_li_content">
+                                    <div class="category_prime_menu_li_image">
+                                        <img src="images/repair_logo.png">
+                                    </div>
+                                    <p class="full_height_space"></p>
+                                    <p>Ремонт</p>
+                                </div>
+                            </a>   
+                            <div class="category_prime_menu_hover_border"></div>
+                        </li>
+                    </ul>
+
+                </nav>
+                
+
+
+                <div class="welcome_text">
+                    <div class="welcome_text_bg"></div>
+                    <h3 class="page_title">Главная</h3>
+
+
+                    <div class="preloader">
+                         <div class="loader">
+                            <span class="dot dot_1"></span>
+                            <span class="dot dot_2"></span>
+                            <span class="dot dot_3"></span>
+                            <span class="dot dot_4"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="copy">
+                    <div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_in.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_youtube.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_twiter.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_fb.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_youtube.png"></a>
+                        </div>
+                        <div class="social_icon">
+                        <a href="#"><img src="images/social_link_twiter.png"></a>
+                        </div>
+                    </div>
+                    <div class="footer_text">
+                    Powored by <a href="http://wis.md/">We IT Support</a> | All Rights Reserved  
+                    </div>
+
+                </div>
+
+            </div>
+    
+                                                <!-- ----------BODY---------- -->
+              
+             <div id="right_side" style="overflow:hidden;">
+                 <div class="swiper-container">
+
+    <div class="swiper-wrapper">
+
+        
+        
+        <!----------------------------------------- ГЛАВНЫЙ СЛАЙД ----------------------------------------->
+        <div class="swiper-slide">  
+                  
+        
+        
+                 <div class="main_background" style="background-image: url(images/14-MIN.jpg);">
+                <div class="main_background_call_to_action">
+                
+                    <h1> ЗАГОЛОВОК</h1>
+                    <h2>Много всякого текста, много всякого текста, много всякого текста, много всякого текста, много всякого текста, много всякого текста</h2>
+                </div>
+            </div>
+
+        </div>
+        
+        <!----------------------------------------- УСЛУГИ ----------------------------------------->
+        <div class="swiper-slide">              
+            
+            
+            
+            <div class="row services_row">
+                          
+                
+                <div class="separator">       
+                    <div class="separator_bg" style="background-image: url(images/separator.png);">
+                        <h3 class="separator_text separator_text_white">Наши</h3>
+                    </div>
+                      <h3 class="separator_text separator_text_black">услуги</h3>
+                </div>
+
+                  <div class="services simple_padding">
+
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_block">
+                          <a href="#">
+                              <div class="services_img" style="background-image: url(images/services_first_background.png);">
+                                  <div class="services_title">
+                                      <h3>Дизайн интерьера</h3>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>                                
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_block">
+                          <div class="services_img" style="background-image: url(images/services_second_background.png);">
+                              <div class="services_title">
+                                  <h3>Комерческий дизайн</h3>
+                              </div>
+                          </div>
+                      </div>                                
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_block">
+                          <div class="services_img" style="background-image: url(images/services_third_background.png);">
+                              <div class="services_title">
+                                  <h3>Дизайн экстерьера</h3>
+                              </div>
+                          </div>
+                      </div>                                
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_block">
+                          <div class="services_img" style="background-image: url(images/services_forth_background.png);">
+                              <div class="services_title">
+                                  <h3>Ландшафтный дизайн</h3>
+                              </div>
+                          </div>
+                      </div>                                
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_block">
+                          <div class="services_img" style="background-image: url(images/services_fifth_background.png);">
+                              <div class="services_title">
+                                  <h3>Дизайн мебели</h3>
+                              </div>
+                          </div>
+                      </div>                                
+                      <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4 services_block">
+                          <div class="services_img" style="background-image: url(images/services_sixth_background.png);">
+                              <div class="services_title">
+                                  <h3>3D анимация</h3>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+
+
+              <div class="row services_second_row">
+                  <div class="separator">       
+                      <div class="separator_bg" style="background-image: url(images/separator.png);">
+                          <h3 class="separator_text separator_text_white">Что вы</h3>
+                      </div>
+                      <h3 class="separator_text separator_text_black">получаете</h3>
+                  </div>
+
+
+                  <div class="dowry simple_padding">
+                      
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 dowry_item">
+                          <div class="drowry_item_image">
+                              <img src="images/services_first_logo.png">  
+                          </div>
+                          <div class="drowry_item_content">
+                              <h2>Планировочное решение</h2>
+                              <div class="drowry_separator"></div>
+                              <h3>Бесплатно проконсультируем Вас по проекту и предложим планировочное решение можно приобрести все необходимые материалы и мебель.
+                              </h3>
+                          </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 dowry_item">
+                          <div class="drowry_item_image">
+                              <img src="images/services_second_logo.png">  
+                          </div>
+                          <div class="drowry_item_content">
+                              <h2>СПИСОК МАТЕРИАЛОВ, МЕБЕЛИ, ДЕКОРА</h2>
+                              <div class="drowry_separator"></div>
+                              <h3>Предоставляем список магазинов и салонов, в которых можно приобрести все необходимые материалы и мебель. можно приобрести все необходимые материалы и мебель.
+                              </h3>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 dowry_item">
+                          <div class="drowry_item_image">
+                              <img src="images/services_third_logo.png">  
+                          </div>
+                          <div class="drowry_item_content">
+                              <h2>3D ВИЗУАЛИЗАЦИЯ ПРОЕКТА</h2>
+                              <div class="drowry_separator"></div>
+                              <h3>Представим 3D изображения вашего будущего пространства, а также 3D эскизы всех можно приобрести все необходимые материалы и мебель.
+                              </h3>
+                          </div>
+                      </div>
+
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 dowry_item">
+                          <div class="drowry_item_image">
+                              <img src="images/services_forth_logo.png">  
+                          </div>
+                          <div class="drowry_item_content">
+                              <h2>АВТОРСКИЙ НАДЗОР</h2>
+                              <div class="drowry_separator"></div>
+                              <h3>Проконтролируем реализацию проекта согласно собственным стандартам качества. можно приобрести все необходимые материалы и мебель.
+                              </h3>
+                          </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 dowry_item">
+                          <div class="drowry_item_image">
+                              <img src="images/services_fifth_logo.png">  
+                          </div>
+                          <div class="drowry_item_content">
+                              <h2>ПАКЕТ ЧЕРТЕЖЕЙ</h2>
+                              <div class="drowry_separator"></div>
+                              <h3>Соберём полный комплект технических документов, включающий все данные можно приобрести все необходимые материалы и мебель.
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+              </div> 
+        </div>
+        <!----------------------------------------- ПОРТФОЛИО ----------------------------------------->
+        <div class="swiper-slide">
+            <div class="portfolio_swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                            <div class="row portfolio_row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 portfolio_top_left" style="background-image: url(images/14-MIN.jpg);">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 portfolio_top_right" >
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_top_right_top" style="background-image: url(images/14-MIN.jpg);">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_top_right_bottom" style="background-image: url(images/14-MIN.jpg);">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row portfolio_row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 portfolio_bottom_left" style="background-image: url(images/14-MIN.jpg);">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 portfolio_bottom_right" >
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_bottom_right_top" style="background: white;">
+                                    <div class="portfolio_parallelogram"></div>
+                                    <div class="portfolio_text"><p>Трехкомнатная квартира в центре кишинева "Gethera"</p></div>
+                                    <a href="single_case_example.html"><button class="portfolio_button">Подробнее</button></a>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_bottom_right_bottom" style="background-image: url(images/14-MIN.jpg);">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="row portfolio_row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 portfolio_top_left" style="background: black;">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 portfolio_top_right" >
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_top_right_top" style="background: red;">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_top_right_bottom" style="background: orange;">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row portfolio_row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 portfolio_bottom_left" style="background: blue;">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 portfolio_bottom_right" >
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_bottom_right_top" style="background: white;">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_bottom_right_bottom" style="background: green;">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="row portfolio_row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 portfolio_top_left" style="background: black;">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 portfolio_top_right" >
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_top_right_top" style="background: red;">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_top_right_bottom" style="background: orange;">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="row portfolio_row">
+                            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 portfolio_bottom_left" style="background: blue;">
+                            </div>
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 portfolio_bottom_right" >
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_bottom_right_top" style="background: white;">
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 portfolio_bottom_right_bottom" style="background: green;">
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            
+            
+        </div>
+        <!----------------------------------------- КОМАНДА ----------------------------------------->
+        <div class="swiper-slide">
+            <div class="row team_row">
+                
+                                
+                <div class="separator">       
+                    <div class="separator_bg" style="background-image: url(images/separator.png);">
+                        <h3 class="separator_text separator_text_white">Наша</h3>
+                    </div>
+                      <h3 class="separator_text separator_text_black">Команда</h3>
+                </div>
+
+                <div class="team_block">
+               
+                    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 team_member_block">
+                        <div class="team_member_img" style="background-image: url(images/team_first.jpg);">
+                              <div class="team_member_title">
+                                  <p>Козик<br>Мария</p>
+                              </div>
+                          </div>
+                        <div class="team_member_description">
+                            <p>Директор<br>Куратор проектов</p>
+                        </div>
+                        
+                    </div>               
+                    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 team_member_block">
+                        <div class="team_member_img" style="background-image: url(images/team_first.jpg);">
+                              <div class="team_member_title">
+                                  <p>Козик<br>Мария</p>
+                              </div>
+                          </div>
+                        <div class="team_member_description">
+                            <p>Директор<br>Куратор проектов</p>
+                        </div>
+                        
+                    </div>               
+                    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 team_member_block">
+                        <div class="team_member_img" style="background-image: url(images/team_first.jpg);">
+                              <div class="team_member_title">
+                                  <p>Козик<br>Мария</p>
+                              </div>
+                          </div>
+                        <div class="team_member_description">
+                            <p>Директор<br>Куратор проектов</p>
+                        </div>
+                        
+                    </div>               
+                    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 team_member_block">
+                        <div class="team_member_img" style="background-image: url(images/team_first.jpg);">
+                              <div class="team_member_title">
+                                  <p>Козик<br>Мария</p>
+                              </div>
+                          </div>
+                        <div class="team_member_description">
+                            <p>Директор<br>Куратор проектов</p>
+                        </div>
+                        
+                    </div>               
+                    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 team_member_block">
+                        <div class="team_member_img" style="background-image: url(images/team_first.jpg);">
+                              <div class="team_member_title">
+                                  <p>Козик<br>Мария</p>
+                              </div>
+                          </div>
+                        <div class="team_member_description">
+                            <p>Директор<br>Куратор проектов</p>
+                        </div>
+                        
+                    </div>               
+                    <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2 team_member_block">
+                        <div class="team_member_img" style="background-image: url(images/team_first.jpg);">
+                              <div class="team_member_title">
+                                  <p>Козик<br>Мария</p>
+                              </div>
+                          </div>
+                        <div class="team_member_description">
+                            <p>Директор<br>Куратор проектов</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row why_row">
+                
+                <div class="separator">       
+                    <div class="separator_bg" style="background-image: url(images/separator.png);">
+                        <h3 class="separator_text separator_text_white">Почему</h3>
+                    </div>
+                      <h3 class="separator_text separator_text_black">HomeLab</h3>
+                </div>
+
+
+                <div class="why_block" style="background-image: url(images/team_bg.jpg);">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 why_column">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 why_item">
+                        
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="605.159 8173.2 59.182 104">
+                                  <defs>
+
+                                    <filter id="_1" x="605.159" y="8173.2" width="56" height="104" filterUnits="userSpaceOnUse">
+                                      <feOffset dy="3" input="SourceAlpha"/>
+                                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                                      <feFlood flood-opacity="0.471"/>
+                                      <feComposite operator="in" in2="blur"/>
+                                      <feComposite in="SourceGraphic"/>
+                                    </filter>
+                                  </defs>
+                                  <g id="Group_629" data-name="Group 629" transform="translate(0 7418)">
+                                    <path id="Path_185" data-name="Path 185" class="cls-1" d="M-24.873.362H-9.918L-20.609,41.523-35.5,41.453Z" transform="translate(674.26 773.8)"/>
+                                    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, -7418)">
+                                      <text id="_1-2" data-name="1" class="cls-2" transform="translate(614.16 8249.2)"><tspan x="0" y="0">1</tspan></text>
+                                    </g>
+                                  </g>
+                                </svg>
+
+
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 why_description">
+                                <p>Разрабатываем оригинальный авторский стиль, учитывая Ваши предпочтения.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 why_item">
+                        
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="605.159 8247.2 59.182 104">
+                                  <defs>
+                                    <filter id="_2" x="605.159" y="8247.2" width="56" height="104" filterUnits="userSpaceOnUse">
+                                      <feOffset dy="3" input="SourceAlpha"/>
+                                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                                      <feFlood flood-opacity="0.471"/>
+                                      <feComposite operator="in" in2="blur"/>
+                                      <feComposite in="SourceGraphic"/>
+                                    </filter>
+                                  </defs>
+                                  <g id="Group_631" data-name="Group 631" transform="translate(0 7418)">
+                                    <path id="Path_186" data-name="Path 186" class="cls-1" d="M-24.873.362H-9.918L-20.609,41.523-35.5,41.453Z" transform="translate(674.26 847.8)"/>
+                                    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, -7418)">
+                                      <text id="_2-2" data-name="2" class="cls-2" transform="translate(614.16 8323.2)"><tspan x="0" y="0">2</tspan></text>
+                                    </g>
+                                  </g>
+                                </svg>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 why_description">
+                                <p>Составляем смету и полный список материалов в нескольких ценовых категориях.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 why_item">
+                        
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="605.159 8325.2 59.182 104">
+                                  <defs>
+                                    <filter id="_3" x="605.159" y="8325.2" width="56" height="104" filterUnits="userSpaceOnUse">
+                                      <feOffset dy="3" input="SourceAlpha"/>
+                                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                                      <feFlood flood-opacity="0.471"/>
+                                      <feComposite operator="in" in2="blur"/>
+                                      <feComposite in="SourceGraphic"/>
+                                    </filter>
+                                  </defs>
+                                  <g id="Group_630" data-name="Group 630" transform="translate(0 7418)">
+                                    <path id="Path_187" data-name="Path 187" class="cls-1" d="M-24.873.362H-9.918L-20.609,41.523-35.5,41.453Z" transform="translate(674.26 925.8)"/>
+                                    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, -7418)">
+                                      <text id="_3-2" data-name="3" class="cls-2" transform="translate(614.16 8401.2)"><tspan x="0" y="0">3</tspan></text>
+                                    </g>
+                                  </g>
+                                </svg>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 why_description">
+                                <p>Работаем с самыми проверенным поставщиками материалов как в стране, так и за рубежом.</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 why_column">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 why_item">
+                        
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1207.159 8173.2 59.182 104">
+                                  <defs>
+                                    <filter id="_4" x="1207.159" y="8173.2" width="56" height="104" filterUnits="userSpaceOnUse">
+                                      <feOffset dy="3" input="SourceAlpha"/>
+                                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                                      <feFlood flood-opacity="0.471"/>
+                                      <feComposite operator="in" in2="blur"/>
+                                      <feComposite in="SourceGraphic"/>
+                                    </filter>
+                                  </defs>
+                                  <g id="Group_634" data-name="Group 634" transform="translate(0 7418)">
+                                    <path id="Path_185" data-name="Path 185" class="cls-1" d="M-24.873.362H-9.918L-20.609,41.523-35.5,41.453Z" transform="translate(1276.26 773.8)"/>
+                                    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, -7418)">
+                                      <text id="_4-2" data-name="4" class="cls-2" transform="translate(1216.16 8249.2)"><tspan x="0" y="0">4</tspan></text>
+                                    </g>
+                                  </g>
+                                </svg>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 why_description">
+                                <p>Свои строительные бригады, бесплатный авторский надзор, техконтроль и согласование на каждом этапе.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 why_item">
+                        
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1207.159 8247.2 59.182 104">
+                                  <defs>
+                                    <filter id="_5" x="1207.159" y="8247.2" width="56" height="104" filterUnits="userSpaceOnUse">
+                                      <feOffset dy="3" input="SourceAlpha"/>
+                                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                                      <feFlood flood-opacity="0.471"/>
+                                      <feComposite operator="in" in2="blur"/>
+                                      <feComposite in="SourceGraphic"/>
+                                    </filter>
+                                  </defs>
+                                  <g id="Group_633" data-name="Group 633" transform="translate(0 7418)">
+                                    <path id="Path_186" data-name="Path 186" class="cls-1" d="M-24.873.362H-9.918L-20.609,41.523-35.5,41.453Z" transform="translate(1276.26 847.8)"/>
+                                    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, -7418)">
+                                      <text id="_5-2" data-name="5" class="cls-2" transform="translate(1216.16 8323.2)"><tspan x="0" y="0">5</tspan></text>
+                                    </g>
+                                  </g>
+                                </svg>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 why_description">
+                                <p>Все наши действия подкреплены соответствиям СНиП на каждом этапе.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 why_item">
+                        
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1207.159 8325.2 59.182 104">
+                                  <defs>
+                                    <filter id="_6" x="1207.159" y="8325.2" width="56" height="104" filterUnits="userSpaceOnUse">
+                                      <feOffset dy="3" input="SourceAlpha"/>
+                                      <feGaussianBlur stdDeviation="3" result="blur"/>
+                                      <feFlood flood-opacity="0.471"/>
+                                      <feComposite operator="in" in2="blur"/>
+                                      <feComposite in="SourceGraphic"/>
+                                    </filter>
+                                  </defs>
+                                  <g id="Group_632" data-name="Group 632" transform="translate(0 7418)">
+                                    <path id="Path_187" data-name="Path 187" class="cls-1" d="M-24.873.362H-9.918L-20.609,41.523-35.5,41.453Z" transform="translate(1276.26 925.8)"/>
+                                    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, -7418)">
+                                      <text id="_6-2" data-name="6" class="cls-2" transform="translate(1216.16 8401.2)"><tspan x="0" y="0">6</tspan></text>
+                                    </g>
+                                  </g>
+                                </svg>
+
+                            </div>
+                            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 why_description">
+                                <p>Вы можете составить гибкий график оплаты, удобный для Вас</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+        <!----------------------------------------- КАК РАБОТАЕМ ----------------------------------------->
+        <div class="swiper-slide">
+
+            <div class="how_separator">
+            <p>Этапы работы:</p>
+            </div>
+            
+            <div class="how_row" style="background-image: url(images/how_bg.png);">
+                <div class="how_row_content">
+                                <!-- FIRST ROW -->
+                    <div class="how_content">
+                        <div class="how_margin_block"></div>
+                        <div class="how_image_row">
+
+                            <div class = "how_image_content ">
+
+                                <!---------- ИЗОБРАЖЕНИЕ 1_1 ---------->
+                                <div class="how_item how_item_left">
+
+                                    <div class="how_big_text" id="how_text_1_1">
+                                        <p>Оформление<br>заявки</p>
+                                    </div>
+                                    <img class="how_item_image_circle" src="images/how_circle.png">
+                                    <img class="how_item_image_logo" src="images/how_curriculum.png">
+                                </div>
+
+
+                                <div class="how_full_width">
+                                    <div class="how_full_width_left"></div>
+
+                                        <div class = "how_visible">
+                                                <div class="how_big">
+                                                    <div class="how_horisontal_line"></div>
+                                            </div>
+                                        </div>
+                                    <div class="how_full_width_right"></div>
+                                </div>
+
+
+                                <!---------- ИЗОБРАЖЕНИЕ 1_2 ---------->
+                                <div class="how_item how_item_right">
+                                    <div class="how_big_text" id="how_text_1_2">
+                                        <p>Наше<br>предложение</p>
+                                    </div>
+                                    <img class="how_item_image_circle" src="images/how_circle.png">
+                                    <img class="how_item_image_logo" src="images/how_creativity.png">
+                                </div>
+
+                                <!---------- НИЖНИЙ ТЕКСТ 1_2 ---------->
+                                <div class="how_horisontal_text how_horisontal_text_top">
+                                    <p>Выезд на<br>объект</p>
+                                </div>
+
+                            </div>
+
+                            <div class = "how_image_content">
+
+
+
+                                <div class="how_full_width">
+                                    <div class="how_full_width_left"></div>
+
+                                        <div class = "visible">
+                                                <div class="big">
+                                                    <div class="how_horisontal_line"></div>
+                                            </div>
+                                        </div>
+                                    <div class="how_full_width_right"></div>
+                                </div>
+
+
+                                <!---------- ИЗОБРАЖЕНИЕ 1_3 ---------->
+                                <div class="how_item how_item_right">
+
+                                    <div class="how_big_text" id="how_text_1_3">
+                                        <p>3D<br>Визуализация<br>проекта</p>
+                                    </div>
+                                    <img class="how_item_image_circle" src="images/how_circle.png">
+                                    <img class="how_item_image_logo" src="images/how_computer.png">
+                                </div>
+
+                                <!---------- НИЖНИЙ ТЕКСТ 1_2 ---------->
+                                <div class="how_horisontal_text how_horisontal_text_top">
+                                    <p>Подписание<br>договора</p>
+                                </div>
+                                <!---------- БОКОВОЙ ТЕКСТ ТЕКСТ 1 ---------->
+                                <div class="how_vertical_text how_vertical_text_right">
+                                    <p>Выбор и<br>покупка материалов</p>
+                                </div>
+
+                                <!---------- ВЕРТИКАЛЬНАЯ ЛИНИЯ ---------->
+
+                                <div class="how_vertical_line how_vertical_line_right"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- SECOND ROW -->
+                    <div class="how_content">
+                        <div class="how_margin_block"></div>
+                        <div class="how_image_row">
+
+                            <div class = "how_image_content ">
+
+                                <!---------- БОКОВОЙ ТЕКСТ ТЕКСТ 1 ---------->
+                                <div class="how_vertical_text how_vertical_text_left">
+                                    <p>Следим за качеством<br>выполнения работ</p>
+                                </div>
+
+                                <div class="how_vertical_line how_vertical_line_left"></div>
+
+                                <!---------- ИЗОБРАЖЕНИЕ 2_1 ---------->
+                                <div class="how_item how_item_left">
+
+                                    <div class="how_big_text" id="how_text_2_1">
+                                        <p>Начало<br>ремонтных работ</p>
+                                    </div>
+                                    <img class="how_item_image_circle" src="images/how_circle.png">
+                                    <img class="how_item_image_logo" src="images/how_trowel.png">
+                                </div>
+
+
+                                <div class="how_full_width">
+                                    <div class="how_full_width_left"></div>
+
+                                        <div class = "how_visible">
+                                                <div class="how_big">
+                                                    <div class="how_horisontal_line how_horisontal_line_light"></div>
+                                            </div>
+                                        </div>
+                                    <div class="how_full_width_right"></div>
+                                </div>
+
+
+                                <!---------- ИЗОБРАЖЕНИЕ 2_2 ---------->
+                                <div class="how_item how_item_right">
+
+                                    <div class="how_big_text" id="how_text_2_2">
+                                        <p>Выдача<br>дизайна проекта</p>
+                                    </div>
+                                    <img class="how_item_image_circle" src="images/how_circle.png">
+                                    <img class="how_item_image_logo" src="images/how_house_sketch.png">
+                                </div>
+
+                                <div class="how_vertical_line how_vertical_line_right"></div>
+
+                                <div class="how_horisontal_text how_horisontal_text_middle">
+                                    <p>Подписание<br>договора на ремонт,<br>подсчет сметы</p>
+                                </div>
+
+                                <div class="how_horisontal_text how_around_text "></div>
+
+                            </div>
+
+                            <div class = "how_image_content">
+
+
+
+                                <div class="how_full_width">
+                                    <div class="how_full_width_left"></div>
+
+                                        <div class = "visible">
+                                                <div class="big">
+                                                    <div class="how_horisontal_line"></div>
+                                            </div>
+                                        </div>
+                                    <div class="how_full_width_right"></div>
+                                </div>
+
+
+                                <!---------- ИЗОБРАЖЕНИЕ 2_3 ---------->
+                                <div class="how_item how_item_right">
+
+                                    <div class="how_big_text" id="how_text_2_3">
+                                        <p>Согласование<br>деталей</p>
+                                    </div>
+                                    <img class="how_item_image_circle" src="images/how_circle.png">
+                                    <img class="how_item_image_logo" src="images/how_list.png">
+                                </div>
+
+                                <div class="how_horisontal_text how_horisontal_text_middle">
+                                    <p>Подготовка<br>пакета<br>чертежей</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                                    <!-- THIRD ROW -->
+                    <div class="how_content">
+                        <div class="how_margin_block"></div>
+                        <div class="how_image_row">
+
+                            <div class = "how_image_content">
+
+                                <!---------- ИЗОБРАЖЕНИЕ 3_1 ---------->
+                                <div class="how_item how_item_left">
+                                    <div class="how_big_text" id="how_text_3_1">
+                                        <p>Выдача<br>готового проекта</p>
+                                    </div>
+                                    <img class="how_item_image_circle" src="images/how_circle.png">
+                                    <img class="how_item_image_logo" src="images/how_house_key.png">
+                                </div>
+
+
+                                <div class="how_full_width">
+                                    <div class="how_full_width_left"></div>
+
+                                        <div class = "how_visible">
+                                                <div class="how_big">
+                                                    <div class="how_horisontal_line how_horisontal_line_light"></div>
+                                            </div>
+                                        </div>
+                                    <div class="how_full_width_right"></div>
+                                </div>
+
+                                <a href="#">
+                                    <div class="button_block">
+                                        <p class="button_link">Заказать проект</p>
+                                    </div>
+
+                                </a>
+
+                            </div>
+
+
+                            <div class = "how_black_button_content">
+                            
+                                <a href="images/14-MIN.jpg" download>
+                                    <div class="how_black_button">
+                                        <img src="images/how_download-button.png">
+                                        <p>скачать pdf</p>
+                                    </div>
+                                </a>
+                                <div class="how_black_button_text">
+                                    <p>В PDF документе содержатся:<br>договор на разработку дизайна<br>полное описание процесса работы</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                
+
+            </div>
+
+
+        </div>
+        <!----------------------------------------- ОТЗЫВЫ ----------------------------------------->
+        <div class="swiper-slide">
+   
+              
+            
+ 
+            <div class="row reviews_row">
+                
+                                
+                <div class="separator">       
+                    <div class="separator_bg" style="background-image: url(images/separator.png);">
+                        <h3 class="separator_text separator_text_white">Отзывы</h3>
+                    </div>
+                      <h3 class="separator_text separator_text_black">клиентов</h3>
+                </div>
+
+                <div class="reviews_block" style="background-image: url(images/reviews_bg.jpg);">
+                    <div class="row" style="height: 100%;position: relative;">
+                          <div id="carousel_reviews">
+                              <div class="prev">
+                                  <img src="images/reviews_first.png">
+                              </div>
+
+                              <div class="selected">
+                                  <img src="images/reviews_first.png">
+                              </div>
+
+                              <div class="next">
+                                  <img src="images/reviews_first.png">
+                              </div>
+                          </div>
+                        
+    
+                        <div class="reviews_buttons">
+                          <button id="prev">&#60;</button>
+                            <div><p>|&nbsp;|</p></div>
+                          <button id="next">&#62;</button>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+
+                                   
+            <div class="row partners_row">
+                
+                                
+                <div class="separator">       
+                    <div class="separator_bg" style="background-image: url(images/separator.png);">
+                        <h3 class="separator_text separator_text_white">Наши</h3>
+                    </div>
+                      <h3 class="separator_text separator_text_black">Партнеры</h3>
+                </div>
+
+         
+
+            
+                <div class="partners_block">
+                        
+                    <div class="owl-carousel_container">
+
+                        <div class="owl-carousel">
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+
+                            <div class="item">
+                                <img src="images/partners_example.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!----------------------------------------- ФОРМА ----------------------------------------->
+        <div class="swiper-slide contact_slide_2" id="contact_slide">
+            <div class="row contact_row" style="background-image: url(images/contact_form_bg.jpg);">
+                <form action="extens/application.php" class="form-horizontal" method="post" role="form">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact_title">
+                            <h2>Контактная форма:</h2>
+                            <img src="images/contact_form_separator.png">
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Имя*" required>
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail*" required>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                            <input type="text" class="form-control" id="phone" name="phone" placeholder="Телефон*" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group ">
+                            <textarea id="message" name="message" class="form-control mesage_area" placeholder="Коментарий" rows="1"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        
+                        <div class="form-group btn_send_block" >
+                            <button type="submit" class="btn_send"> 
+                                <img src="images/contact_form_send_btn_icon.png" style="width: 20px; margin-top: 1px;">Отправить
+                            </button>
+                        </div>
+                        
+                        <div class="form-group btn_send_block" >
+                            <div class="btn btn_send" id="map_button"> 
+                                <img src="images/contact_form_map_button_icon.png" style="height: 18px;">Найти на карте
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+              </div>
+                         <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span id="closeMap" class="close">&times;</span>
+                <iframe class="modal-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2720.3908272380177!2d28.85360317112876!3d47.01293302016408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8a009d6ea418e372!2z0J_Qu9Cw0L3QtdGC0LAg0LHQsNCx0L7Rh9C10Lo!5e0!3m2!1sru!2s!4v1507313708755" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div id="contactModal" class="modal">
+                <span id="closeContact" class="close">&times;</span>
+                <div id="contactModalBlock">
+                    <form action="extens/application.php" class="form-horizontal" method="post" role="form">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 contact_title">
+                                <h2>Контактная форма:</h2>
+                                <img src="images/contact_form_separator.png">
+                            </div>
+
+                        </div>
+                        <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Имя*" required>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail*" required>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 form-group">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Телефон*" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group ">
+                                <textarea id="message" name="message" class="form-control mesage_area" placeholder="Коментарий" rows="1"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="form-group btn_send_block" >
+                                <button type="submit" class="btn_send"> 
+                                    <img src="images/contact_form_send_btn_icon.png" style="width: 20px; margin-top: 1px;">Отправить
+                                </button>
+                            </div>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+<!--                         <a data-target="#myVerticalCarousel" data-slide-to="0" class="scrollup">Наверх</a>-->
+<!--
+                 <script type="text/javascript">
+                     
+$(document).ready(function(){
+ var $scrollup = $('.scrollup'),
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$scrollup.click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+</script>
+-->
+        </main>
+
+
+
+                
+        <script src="js/feetback_slider.js"></script>
+        <script src="js/vertical_carousel.js"></script>
+        <script src="js/partners_carousel.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script src="js/map_block.js"></script>
+        <script src="js/contact_modal.js"></script>
+        <script src="js/swiper.min.js"></script>
+
+    <script>
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+          margin: 10,
+          autoplay: true,
+          autoplayHoverPause: true,
+          loop: true,
+          
+          
+          
+		nav:true, //Отключил навигацию
+		smartSpeed:1500, //Время движения слайда
+		autoplayTimeout:4000, //Время смены слайда
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 4
+          }
+        }
+      })
+    </script>
+        
+<!--
+        <script>
+        
+        
+        $.global = new Object();
+
+$.global.item = 1;
+$.global.total = 0;
+
+$(document).ready(function() 
+	{
+	
+	var WindowWidth = $(window).width();
+    if (WindowWidth > 991){WindowWidth= WindowWidth * 72 / 100;}
+//    WindowWidth = WindowWidth * 72 / 100;
+	var SlideCount = $('#portfolio_slides li').length;
+	var SlidesWidth = SlideCount * WindowWidth;
+	
+    
+    
+    
+   $.global.item = 0;
+    $.global.total = SlideCount; 
+    
+	$('.portfolio_slide').css('width',WindowWidth+'px');
+	$('#portfolio_slides').css('width',SlidesWidth+'px');
+
+   $("#portfolio_slides li:nth-child(1)").addClass('alive');
+    
+  $('#portfolio_left').click(function() { Slide('back'); }); 
+  $('#portfolio_right').click(function() { Slide('forward'); }); 
+        
+  });
+
+function Slide(direction)
+	{
+   
+    if (direction == 'back') { var $target = $.global.item - 1; }
+    if (direction == 'forward') { var $target = $.global.item + 1; }  
+    
+    if ($target == -1) { DoIt($.global.total-1); } 
+    else if ($target == $.global.total) { DoIt(0); }  
+    else { DoIt($target); }
+    
+    
+	}
+
+function DoIt(target)
+  {
+   
+    var $windowwidth = $(window).width();
+//      windowwidth = = windowwidth * 72 / 100;
+      if ($windowwidth > 991){$windowwidth = $windowwidth *72 / 100;}
+	var $margin = $windowwidth * target; 
+    var $actualtarget = target+1;
+    
+    $("#portfolio_slides li:nth-child("+$actualtarget+")").addClass('alive');
+    
+    $('#portfolio_slides').css('transform','translate3d(-'+$margin+'px,0px,0px)');	
+    
+    $.global.item = target; 
+    
+    
+  }
+
+//    
+//    
+//$(document).ready(function(){
+//  $("#Carusel_partners").carousel({
+//		loop:true, //Зацикливаем слайдер
+//		margin:10, //Отступ от картино если выводите больше 1
+//		nav:false, //Отключил навигацию
+//		autoplay:true, //Автозапуск слайдера
+//		smartSpeed:1000, //Время движения слайда
+//		autoplayTimeout:2000, //Время смены слайда
+//		responsive:{ //Адаптация в зависимости от разрешения экрана
+//			0:{
+//				items:1
+//			},
+//			600:{
+//				items:2
+//			},
+//			1000:{
+//				items:3
+//			}
+//		}
+//	});
+//
+//});
+    </script>
+        
+-->
+        
+        <script type="text/javascript">
+$(window).on('load', function () {
+    var $preloader = $('.preloader'),
+        $spinner   = $preloader.find('loader');
+    $spinner.fadeOut();
+    $preloader.delay(50).fadeOut('slow');
+});
+        </script>
+        
+<!--            <script src="js/swiper.min.js"></script>-->
+
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+////        paginationBulletMessage: 'Go to slide {{1}}',
+////        var $myactiveindex = getActiveIndex
+////         myActiveIndex = mySwiper.activeIndex,
+//        
+    });
+////        var $menu_button = $('#menu_button'),
+////            $('#menu_button').onclick = function(){
+//                swiper.slideTo( $('.contact_slide').index(),1000,false );
+////            };
+//        
+        var menu_button = document.getElementById("menu_button");
+//
+////              menu_button.onclick = function(){
+//                swiper.slideTo(4, 200, true);
+//            }
+//        
+//        // Get the modal
+//var modal = document.getElementById('myModal');
+//
+//// Get the image and insert it inside the modal - use its "alt" text as a caption
+var button = document.getElementById("menu_button");
+//
+  button.onclick = function(){
+    modal.style.display = "block";
+//      swiper.slideTo(4, 200, true);
+}
+//  
+//  
+//  function myFunction() {
+//    modal.style.display = "block";
+//}
+//    });
+                
+//        $('#menu_button').click(function(e) {
+//    e.preventDefault();
+//    swiper.slideTo( $('#contact_slide').index(),1000,false );
+//    });
+    </script>
+        
+          <script>
+    var swiper = new Swiper('.portfolio_swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+        
+        
+    </body>
+</html>
+
+<!--
+                      <div class="row carousel_container">
+                          <div id="carousel">
+                              <div class="hideLeft">
+                                  <img src="https://s16.postimg.org/vklrwoxtx/cover9.jpg">
+                              </div>
+
+                              <div class="prevLeftSecond">
+                                  <img src="https://s16.postimg.org/cgsggckzp/cover8.jpg">
+                              </div>
+
+                              <div class="prev">
+                                  <img src="https://s16.postimg.org/emmrauog5/cover7.jpg">
+                              </div>
+
+                              <div class="selected">
+                                  <img src="https://s16.postimg.org/9drqcz611/cover1.jpg">
+                              </div>
+
+                              <div class="next">
+                                  <img src="https://s16.postimg.org/pnhwfvgp1/cover6.jpg">
+                              </div>
+
+                              <div class="nextRightSecond">
+                                  <img src="https://s16.postimg.org/edp6kxbnp/cover4.jpg">
+                              </div>
+
+                              <div class="hideRight">
+                                  <img src="https://s16.postimg.org/fij8qay4l/cover3.jpg">
+                              </div>
+                          </div>
+                      </div>
+-->
