@@ -93,7 +93,7 @@
                                     <a href="cases.html">Блог</a>
                                 </li>
                                 <li class="main_nav_menu_li">
-                                    <a data-target="#myVerticalCarousel" data-slide-to="6">Контакты</a>
+                                    <a id="contact">Контакты</a>
                                 </li>
                             </ul>
 
@@ -1248,98 +1248,7 @@ return false;
       })
     </script>
         
-<!--
-        <script>
         
-        
-        $.global = new Object();
-
-$.global.item = 1;
-$.global.total = 0;
-
-$(document).ready(function() 
-	{
-	
-	var WindowWidth = $(window).width();
-    if (WindowWidth > 991){WindowWidth= WindowWidth * 72 / 100;}
-//    WindowWidth = WindowWidth * 72 / 100;
-	var SlideCount = $('#portfolio_slides li').length;
-	var SlidesWidth = SlideCount * WindowWidth;
-	
-    
-    
-    
-   $.global.item = 0;
-    $.global.total = SlideCount; 
-    
-	$('.portfolio_slide').css('width',WindowWidth+'px');
-	$('#portfolio_slides').css('width',SlidesWidth+'px');
-
-   $("#portfolio_slides li:nth-child(1)").addClass('alive');
-    
-  $('#portfolio_left').click(function() { Slide('back'); }); 
-  $('#portfolio_right').click(function() { Slide('forward'); }); 
-        
-  });
-
-function Slide(direction)
-	{
-   
-    if (direction == 'back') { var $target = $.global.item - 1; }
-    if (direction == 'forward') { var $target = $.global.item + 1; }  
-    
-    if ($target == -1) { DoIt($.global.total-1); } 
-    else if ($target == $.global.total) { DoIt(0); }  
-    else { DoIt($target); }
-    
-    
-	}
-
-function DoIt(target)
-  {
-   
-    var $windowwidth = $(window).width();
-//      windowwidth = = windowwidth * 72 / 100;
-      if ($windowwidth > 991){$windowwidth = $windowwidth *72 / 100;}
-	var $margin = $windowwidth * target; 
-    var $actualtarget = target+1;
-    
-    $("#portfolio_slides li:nth-child("+$actualtarget+")").addClass('alive');
-    
-    $('#portfolio_slides').css('transform','translate3d(-'+$margin+'px,0px,0px)');	
-    
-    $.global.item = target; 
-    
-    
-  }
-
-//    
-//    
-//$(document).ready(function(){
-//  $("#Carusel_partners").carousel({
-//		loop:true, //Зацикливаем слайдер
-//		margin:10, //Отступ от картино если выводите больше 1
-//		nav:false, //Отключил навигацию
-//		autoplay:true, //Автозапуск слайдера
-//		smartSpeed:1000, //Время движения слайда
-//		autoplayTimeout:2000, //Время смены слайда
-//		responsive:{ //Адаптация в зависимости от разрешения экрана
-//			0:{
-//				items:1
-//			},
-//			600:{
-//				items:2
-//			},
-//			1000:{
-//				items:3
-//			}
-//		}
-//	});
-//
-//});
-    </script>
-        
--->
         
         <script type="text/javascript">
 $(window).on('load', function () {
@@ -1364,46 +1273,17 @@ $(window).on('load', function () {
           el: '.swiper-pagination',
           clickable: true,
         },
-////        paginationBulletMessage: 'Go to slide {{1}}',
-////        var $myactiveindex = getActiveIndex
-////         myActiveIndex = mySwiper.activeIndex,
-//        
     });
-////        var $menu_button = $('#menu_button'),
-////            $('#menu_button').onclick = function(){
-//                swiper.slideTo( $('.contact_slide').index(),1000,false );
-////            };
-//        
-        var menu_button = document.getElementById("menu_button");
-//
-////              menu_button.onclick = function(){
-//                swiper.slideTo(4, 200, true);
-//            }
-//        
-//        // Get the modal
-//var modal = document.getElementById('myModal');
-//
-//// Get the image and insert it inside the modal - use its "alt" text as a caption
-var button = document.getElementById("menu_button");
-//
+var button = document.getElementById("contact");
   button.onclick = function(){
-    modal.style.display = "block";
-//      swiper.slideTo(4, 200, true);
+//     modal.style.display = "block";
+    swiper.slideTo(4, 200, true);
 }
-//  
-//  
-//  function myFunction() {
-//    modal.style.display = "block";
-//}
-//    });
-                
-//        $('#menu_button').click(function(e) {
-//    e.preventDefault();
-//    swiper.slideTo( $('#contact_slide').index(),1000,false );
-//    });
+
     </script>
         
-          <script>
+          
+	    <script>
     var swiper = new Swiper('.portfolio_swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
@@ -1415,37 +1295,3 @@ var button = document.getElementById("menu_button");
         
     </body>
 </html>
-
-<!--
-                      <div class="row carousel_container">
-                          <div id="carousel">
-                              <div class="hideLeft">
-                                  <img src="https://s16.postimg.org/vklrwoxtx/cover9.jpg">
-                              </div>
-
-                              <div class="prevLeftSecond">
-                                  <img src="https://s16.postimg.org/cgsggckzp/cover8.jpg">
-                              </div>
-
-                              <div class="prev">
-                                  <img src="https://s16.postimg.org/emmrauog5/cover7.jpg">
-                              </div>
-
-                              <div class="selected">
-                                  <img src="https://s16.postimg.org/9drqcz611/cover1.jpg">
-                              </div>
-
-                              <div class="next">
-                                  <img src="https://s16.postimg.org/pnhwfvgp1/cover6.jpg">
-                              </div>
-
-                              <div class="nextRightSecond">
-                                  <img src="https://s16.postimg.org/edp6kxbnp/cover4.jpg">
-                              </div>
-
-                              <div class="hideRight">
-                                  <img src="https://s16.postimg.org/fij8qay4l/cover3.jpg">
-                              </div>
-                          </div>
-                      </div>
--->
